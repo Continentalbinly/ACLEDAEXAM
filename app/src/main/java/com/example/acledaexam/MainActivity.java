@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isUserLoggedIn() {
-        return true;
+        return false;
     }
 }
