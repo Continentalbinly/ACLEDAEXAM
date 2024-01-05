@@ -16,18 +16,22 @@
                     android:background="@color/colorPrimary"
                     app:popupTheme="@style/Theme.ACLEDAEXAM.PopupOverlay">
                     <ImageView
-                        android:layout_width="220dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/logo2"/>
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo2"
+                        android:layout_gravity="start"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/laoqr"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="20dp"/>
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:src="@drawable/bell"
-                        android:layout_marginLeft="40dp"/>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/bell"/>
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"/>
                 </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
