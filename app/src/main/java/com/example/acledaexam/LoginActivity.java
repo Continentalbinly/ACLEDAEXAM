@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Check if entered credentials match the mock data
                 if (enteredUsername.equals(MOCK_USERNAME) && enteredPassword.equals(MOCK_PASSWORD)) {
                     // Successful login
-                    startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                    startActivity(new Intent(LoginActivity.this, HomeActivityMain.class));
                     finish();
                 } else {
                     // Invalid credentials, show an error message or handle accordingly

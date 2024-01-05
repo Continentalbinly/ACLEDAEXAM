@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (isUserLoggedIn()) {
-            startActivity(new Intent(this, HomeActivity.class));
+            startActivity(new Intent(this, HomeActivityMain.class));
         } else {
             startActivity(new Intent(this, LoginActivity.class));
         }
@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isUserLoggedIn() {
-        return true;
+        return false;
     }
 }
