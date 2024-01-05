@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape with shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#fff" /> <!-- Button background color -->
+            <corners android:radius="20dp" /> <!-- Button corner radius -->
+        </shape>
+    </item>
+
+    <!-- Shadow -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#fff" /> <!-- Shadow color -->
+            <corners android:radius="20dp" /> <!-- Button corner radius -->
+        </shape>
+    </item>
+
+</layer-list>
