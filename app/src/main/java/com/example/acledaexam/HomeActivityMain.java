@@ -1,12 +1,9 @@
 package com.example.acledaexam;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
-
-import com.google.android.material.snackbar.Snackbar;
+import android.widget.ImageButton;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -21,16 +18,20 @@ public class HomeActivityMain extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomeMainBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityHomeMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         setSupportActionBar(binding.appBarHomeActivityMain.toolbars);
+        ImageButton imageButton = findViewById(R.id.statement);
 
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivityMain.this, StatementActivity.class));
+            }
+        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -48,7 +49,6 @@ public class HomeActivityMain extends AppCompatActivity {
             actionBar.setDisplayShowTitleEnabled(false);
         }
     }
-
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
