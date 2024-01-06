@@ -79,7 +79,7 @@
         android:text="Sign In"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000"
-        android:background="#EDBE3C"
+        android:background="@drawable/lohinbutton"
         android:textColorHint="#FD8600"
         android:textSize="20dp"/>
 
