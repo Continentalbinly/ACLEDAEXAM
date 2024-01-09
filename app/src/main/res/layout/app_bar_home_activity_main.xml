@@ -21,14 +21,15 @@
                         android:src="@drawable/logo2"
                         android:layout_gravity="start"/>
                     <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/laoqr"
+                        android:layout_gravity="end"/>
+                    <ImageButton
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:src="@drawable/bell"
-                        android:layout_marginLeft="40dp"/>
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/laoqr"
+                        android:background="@android:color/transparent"
                         android:layout_gravity="end"/>
                 </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
